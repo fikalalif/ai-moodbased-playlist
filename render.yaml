@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: ai-moodbased-playlist
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: python app.py
+    runtime: python
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SPOTIPY_CLIENT_ID
+        sync: false
+      - key: SPOTIPY_CLIENT_SECRET
+        sync: false
+      - key: SPOTIPY_REDIRECT_URI
+        sync: false
