@@ -1,5 +1,24 @@
+# Jangan upload virtual environment
+venv/
+
+# Jangan upload file .env yang berisi secret
 .env
+
+# Cache Python
 __pycache__/
-*.pyc
-/static/css/global.css
+*.py[cod]
+*$py.class
+
+# Cache editor
+.DS_Store
+.vscode/
+.idea/
+
+# Log dan output
+*.log
+*.sqlite3
+*.db
+
+# File Tailwind build (jika pakai)
+dist/
 node_modules/
