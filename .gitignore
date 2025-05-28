@@ -1,2 +1,5 @@
 .env
-venv/
+__pycache__/
+*.pyc
+/static/css/global.css
+node_modules/
