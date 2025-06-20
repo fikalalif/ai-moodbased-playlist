@@ -1,8 +1,6 @@
-
 from flask import Flask, render_template, request, redirect, session
 from spotify_helper import get_playlist, create_spotify_client
 from sentiment_model import detect_sentiment
-from emotion_model import detect_emotion_from_webcam
 from dotenv import load_dotenv
 import os
 from flask import jsonify
